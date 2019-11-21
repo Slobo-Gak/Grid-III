@@ -1,0 +1,331 @@
+/*
+COLOURS
+#242424  tamno siva
+#fabe0a  zuta
+#32d2fa  plava
+#f53f0c  crvena
+#81cc10  zelena
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.3;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #242424;
+    background: #eee;
+}
+
+/***** GRID *******/
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/*************
+              *************
+CUSTOM STYLES
+              *************
+*************/
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+nav {
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 50px 35px;
+}
+
+.crno {
+    background: #242424;
+}
+
+.zuto {
+    background: #fabe0a;
+}
+
+.plavo {
+    background: #32d2fa;
+}
+
+.narandza {
+    background: #f53f0c;
+}
+
+.zeleno {
+    background: #81cc10;
+}
+
+.logo {
+    padding: 30px;
+    background: white;
+}
+
+.fa-swimmer {
+    color: #32d2fa;
+    font-size: 3rem;
+}
+
+header section h2 {
+    float: right;
+    margin-left: 25px;
+    text-align: center;
+}
+
+header section h1 {
+    float: right;
+    text-align: center;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+span {
+    color: #32d2fa;
+}
+
+header section {
+    padding: 30px;
+    background: white;
+    float: left;
+}
+
+.fa-angle-double-right {
+    float: right;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.prva-sekcija {
+    background: rgba(51, 51, 51, 0.2);
+    margin-top: 100px;
+}
+
+header .col-3 {
+    padding: 20px;
+    color: white;
+    margin: 10px;
+}
+
+header .row .narandza {
+    position: relative;
+    top: 40px;
+}
+
+header .row .plavo {
+    position: relative;
+    top: 40px;
+}
+
+header .row .zeleno {
+    position: relative;
+    top: 40px;
+
+}
+
+header .row .zuto {
+    position: relative;
+    top: 40px;
+}
+
+.prva-sekcija .col-6 {
+    padding: 30px;
+    background: white;
+    margin: 20px;
+    height: 400px;
+}
+
+.prva-sekcija .col-6 p {
+    line-height: 35px;
+}
+
+.prva-sekcija .slika {
+    background-image: url(img/welcome1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.prva-sekcija button {
+    padding: 15px 30px;
+    background: #81cc10;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.prva-sekcija .slika2 {
+    background-image: url(img/testimonials2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.druga-sekcija {
+    background-image: url(img/top-rated.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.druga-sekcija .col-6 {
+    margin: 90px 30px;
+    padding: 40px 20px;
+    color: white;
+}
+.treca-sekcija{
+     background: rgba(51, 51, 51, 0.2);
+    padding: 20px;
+}
+.treca-sekcija .col-6{
+    margin: 20px;
+}
+.treca-sekcija .slika{
+    background-image: url(img/events.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.treca-sekcija .tekst{
+    background: #81cc10 ;
+    color: white;
+    padding-left: 20px;
+    font-size: 2rem;
+}
+.treca-sekcija i{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.treca-sekcija .col-3{
+    background: white;
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.treca-sekcija .col-3 h2{
+    color: #32d2fa;
+}
+.cetvrta-sekcija{
+    background-image: url(img/skill.jpg);
+    background-size: cover;
+    background-position:top center;
+    height: 90vh;
+}
+.cetvrta-sekcija .col-5{
+    margin: 150px;
+    height: 400px;
+    color: white;
+    padding: 30px;
+}
+.peta-sekcija .col-6{
+    padding: 20px;
+    margin: 10px;
+}
+.peta-sekcija .kontakt{
+    background: #32d2fa;
+    color: white;
+    font-size: 1.8rem;
+}
+.peta-sekcija .col-3{
+    text-align: center;
+    margin-top: 80px;
+}
+.peta-sekcija .col-12{
+    text-align: center;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
